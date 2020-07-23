@@ -1,0 +1,901 @@
+
+*** Running vivado
+    with args -log system_artico3_shuffler_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_artico3_shuffler_0_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_artico3_shuffler_0_0.tcl -notrace
+Command: synth_design -top system_artico3_shuffler_0_0 -part xczu9eg-ffvb1156-2-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg-ffvb1156'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg-ffvb1156'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -268 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19558 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.922 ; gain = 0.000 ; free physical = 10238 ; free virtual = 27014
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_artico3_shuffler_0_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ip/system_artico3_shuffler_0_0/synth/system_artico3_shuffler_0_0.vhd:207]
+	Parameter C_NUM_REG_RW bound to: 10 - type: integer 
+	Parameter C_NUM_REG_RO bound to: 40 - type: integer 
+	Parameter C_PIPE_DEPTH bound to: 3 - type: integer 
+	Parameter C_EN_LATENCY bound to: 4 - type: integer 
+	Parameter C_VOTER_LATENCY bound to: 2 - type: integer 
+	Parameter C_MAX_SLOTS bound to: 8 - type: integer 
+	Parameter C_CLK_GATE_BUFFER bound to: GLOBAL - type: string 
+	Parameter C_RST_BUFFER bound to: GLOBAL - type: string 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_ARTICO3_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_OP_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_GR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'shuffler' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:37' bound to instance 'U0' of component 'shuffler' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ip/system_artico3_shuffler_0_0/synth/system_artico3_shuffler_0_0.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'shuffler' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:273]
+	Parameter C_NUM_REG_RW bound to: 10 - type: integer 
+	Parameter C_NUM_REG_RO bound to: 40 - type: integer 
+	Parameter C_PIPE_DEPTH bound to: 3 - type: integer 
+	Parameter C_EN_LATENCY bound to: 4 - type: integer 
+	Parameter C_VOTER_LATENCY bound to: 2 - type: integer 
+	Parameter C_MAX_SLOTS bound to: 8 - type: integer 
+	Parameter C_CLK_GATE_BUFFER bound to: GLOBAL - type: string 
+	Parameter C_RST_BUFFER bound to: GLOBAL - type: string 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_ARTICO3_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_OP_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_GR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 's01_axi_awuser' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:236]
+WARNING: [Synth 8-506] null port 's01_axi_wuser' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:242]
+WARNING: [Synth 8-506] null port 's01_axi_buser' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:247]
+WARNING: [Synth 8-506] null port 's01_axi_aruser' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:260]
+WARNING: [Synth 8-506] null port 's01_axi_ruser' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:267]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:282]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:284]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:285]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:286]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:287]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:288]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:289]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:290]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:291]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:297]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:298]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:299]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:300]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:301]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:302]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:303]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:304]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:305]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:306]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:307]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:308]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:309]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:310]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:311]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:313]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:314]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:315]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:316]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:317]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:318]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:326]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:327]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:329]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:332]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:333]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:334]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:337]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:338]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:339]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:340]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:341]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:344]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:345]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:346]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:347]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:349]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:350]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:351]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:352]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:356]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:363]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:366]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:367]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:370]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:371]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:372]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:373]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:374]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:375]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:376]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:377]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:378]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:379]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:380]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:386]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:387]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:388]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:389]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:390]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:391]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:392]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:393]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:399]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:405]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:411]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:412]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:418]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:424]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:425]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:432]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:433]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:436]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:437]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:438]
+INFO: [Synth 8-638] synthesizing module 'shuffler_control' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:212]
+	Parameter C_NUM_REG_RW bound to: 10 - type: integer 
+	Parameter C_NUM_REG_RO bound to: 40 - type: integer 
+	Parameter C_PIPE_DEPTH bound to: 3 - type: integer 
+	Parameter C_EN_LATENCY bound to: 4 - type: integer 
+	Parameter C_VOTER_LATENCY bound to: 2 - type: integer 
+	Parameter C_MAX_SLOTS bound to: 8 - type: integer 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_ARTICO3_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_OP_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARTICO3_GR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:221]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:224]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:226]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:227]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:228]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:229]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:233]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:234]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:235]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:236]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:240]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:241]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:242]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:243]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[0].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[1].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[2].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[3].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[4].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[5].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[6].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+WARNING: [Synth 8-6014] Unused sequential element pmc_errors_gen[7].pmc_errors_rst_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:873]
+INFO: [Synth 8-256] done synthesizing module 'shuffler_control' (1#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_control.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'shuffler_data' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:236]
+	Parameter C_PIPE_DEPTH bound to: 3 - type: integer 
+	Parameter C_EN_LATENCY bound to: 4 - type: integer 
+	Parameter C_VOTER_LATENCY bound to: 2 - type: integer 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_ARTICO3_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 20 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'S_AXI_AWUSER' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:123]
+WARNING: [Synth 8-506] null port 'S_AXI_WUSER' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:145]
+WARNING: [Synth 8-506] null port 'S_AXI_BUSER' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:162]
+WARNING: [Synth 8-506] null port 'S_AXI_ARUSER' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:202]
+WARNING: [Synth 8-506] null port 'S_AXI_RUSER' ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:226]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:514]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:526]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:569]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:660]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:675]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:682]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:709]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:721]
+INFO: [Synth 8-638] synthesizing module 'fifo' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/fifo.vhd:39]
+	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RST_POL bound to: 1'b0 
+	Parameter C_FIFO_DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo' (2#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/fifo.vhd:39]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:793]
+WARNING: [Synth 8-3919] null assignment ignored [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:802]
+INFO: [Synth 8-256] done synthesizing module 'shuffler_data' (3#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler_data.vhd:236]
+INFO: [Synth 8-226] default block is never used [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:857]
+INFO: [Synth 8-226] default block is never used [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1161]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'clock_buffer' to cell 'BUFGCE' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1450]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+INFO: [Synth 8-113] binding component instance 'reset_buffer' to cell 'BUFG' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1530]
+WARNING: [Synth 8-6014] Unused sequential element enable_aux_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:879]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1056]
+WARNING: [Synth 8-6014] Unused sequential element remaining_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1058]
+WARNING: [Synth 8-6014] Unused sequential element aux_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1059]
+WARNING: [Synth 8-6014] Unused sequential element aux_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1107]
+WARNING: [Synth 8-6014] Unused sequential element aux_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1169]
+WARNING: [Synth 8-6014] Unused sequential element aux_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1717]
+INFO: [Synth 8-4471] merging register 'pipe_latency_ctrl.pipe_reg[5][7:0]' into 'engen_out_dly1_reg[7:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1036]
+WARNING: [Synth 8-6014] Unused sequential element pipe_latency_ctrl.pipe_reg[5] was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1036]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[1].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[1].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[2].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[2].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[3].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[3].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[4].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[4].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[5].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[5].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[6].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[6].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[7].addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1636]
+WARNING: [Synth 8-6014] Unused sequential element pipe_logic.slot_pipe[7].wdata_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:1642]
+INFO: [Synth 8-256] done synthesizing module 'shuffler' (4#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:273]
+WARNING: [Synth 8-3848] Net s01_axi_buser in module/entity system_artico3_shuffler_0_0 does not have driver. [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ip/system_artico3_shuffler_0_0/synth/system_artico3_shuffler_0_0.vhd:357]
+WARNING: [Synth 8-3848] Net s01_axi_ruser in module/entity system_artico3_shuffler_0_0 does not have driver. [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ip/system_artico3_shuffler_0_0/synth/system_artico3_shuffler_0_0.vhd:377]
+INFO: [Synth 8-256] done synthesizing module 'system_artico3_shuffler_0_0' (5#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ip/system_artico3_shuffler_0_0/synth/system_artico3_shuffler_0_0.vhd:207]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_buser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_ruser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_awuser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_wuser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_aruser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1437.922 ; gain = 0.000 ; free physical = 8727 ; free virtual = 25655
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1437.922 ; gain = 0.000 ; free physical = 8643 ; free virtual = 25571
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  BUFG => BUFGCE: 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2041.508 ; gain = 4.000 ; free physical = 7654 ; free virtual = 24588
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2041.508 ; gain = 603.586 ; free physical = 7344 ; free virtual = 24294
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2041.508 ; gain = 603.586 ; free physical = 7344 ; free virtual = 24293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2041.508 ; gain = 603.586 ; free physical = 7345 ; free virtual = 24295
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sw_aresetn" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sw_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "full_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "empty_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "addr_capture" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red_macreg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_capture" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red_macreg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "engen_step" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "engen_step" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "engen_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "index" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_aux" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2041.508 ; gain = 603.586 ; free physical = 6790 ; free virtual = 23744
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |shuffler__GB0 |           1|     27783|
+|2     |shuffler__GB1 |           1|     33995|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 19    
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 34    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 23    
+	   3 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 69    
+	               16 Bit    Registers := 31    
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 23    
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 50    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 44    
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 2     
+	   4 Input     40 Bit        Muxes := 2     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 42    
+	   4 Input     32 Bit        Muxes := 11    
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 13    
+	   2 Input      9 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 617   
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 376   
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 25    
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 40    
+	   4 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 284   
+	   3 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module shuffler_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 26    
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 2     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module shuffler_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	   4 Input      1 Bit        Muxes := 5     
+Module shuffler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 19    
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 34    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 23    
+	   3 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 58    
+	               16 Bit    Registers := 25    
+	                8 Bit    Registers := 20    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 44    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 2     
+	   4 Input     40 Bit        Muxes := 2     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 11    
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 615   
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 367   
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 17    
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 27    
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 232   
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "empty_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "full_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/system/ipshared/f1eb/hdl/vhdl/shuffler.vhd:929]
+DSP Report: Generating DSP multOp, operation Mode is: A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: operator multOp is absorbed into DSP multOp.
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_buser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_ruser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_awuser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_wuser[0]
+WARNING: [Synth 8-3331] design system_artico3_shuffler_0_0 has unconnected port s01_axi_aruser[0]
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[0]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[1]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[2]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[3]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[4]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[5]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[6]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg_rep[7]' (FDCE) to 'U0/i_0/shuffler_data/fifo_i/read_pointer_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 2131.492 ; gain = 693.570 ; free physical = 7346 ; free virtual = 24346
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------+------------+-----------+----------------------+------------+
+|Module Name                 | RTL Object | Inference | Size (Depth x Width) | Primitives | 
++----------------------------+------------+-----------+----------------------+------------+
+|U0/i_0/shuffler_data/fifo_i | mem_reg    | Implied   | 256 x 32             |            | 
++----------------------------+------------+-----------+----------------------+------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|shuffler    | A*B            | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|shuffler    | (PCIN>>17)+A*B | 16     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |shuffler__GB0 |           1|     10300|
+|2     |shuffler__GB1 |           1|      6377|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 2708.508 ; gain = 1270.586 ; free physical = 8059 ; free virtual = 25061
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 2708.508 ; gain = 1270.586 ; free physical = 8057 ; free virtual = 25058
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |shuffler__GB0 |           1|     10314|
+|2     |shuffler__GB1 |           1|      6377|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7626 ; free virtual = 24628
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[28]_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[29]_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[30]_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[31]_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[31]_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[31]_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin reg_out[31]_inferred:in0[28] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7550 ; free virtual = 24552
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7548 ; free virtual = 24549
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7545 ; free virtual = 24547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7544 ; free virtual = 24546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7542 ; free virtual = 24544
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7542 ; free virtual = 24543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|shuffler_control | latency_read.pipe_reg[0]                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler_control | latency_write.pipe_reg[0]               | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler_control | pipe_latency_ctrl.pipe_reg[0]           | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler_data    | latency_read.pipe_reg[0]                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler_data    | latency_write.pipe_reg[0]               | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler_data    | pipe_latency_ctrl.pipe_reg[0]           | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler         | pipe_latency_ctrl_reduction.pipe_reg[0] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler         | latency_reduction.red_ctrl_redge_reg[0] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|shuffler         | pipe_latency_ctrl.pipe_reg[0][7]        | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
++-----------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     8|
+|2     |BUFGCE          |     8|
+|3     |CARRY8          |   102|
+|4     |DSP_ALU         |     2|
+|5     |DSP_A_B_DATA    |     2|
+|6     |DSP_C_DATA      |     2|
+|7     |DSP_MULTIPLIER  |     2|
+|8     |DSP_M_DATA      |     2|
+|9     |DSP_OUTPUT      |     2|
+|10    |DSP_PREADD      |     2|
+|11    |DSP_PREADD_DATA |     2|
+|12    |LUT1            |  1469|
+|13    |LUT2            |   285|
+|14    |LUT3            |   231|
+|15    |LUT4            |   455|
+|16    |LUT5            |  1112|
+|17    |LUT6            |  2064|
+|18    |MUXF7           |   192|
+|19    |MUXF8           |    32|
+|20    |RAM64M8         |    20|
+|21    |SRL16E          |    16|
+|22    |FDCE            |    58|
+|23    |FDPE            |     1|
+|24    |FDRE            |  3703|
+|25    |FDSE            |     1|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------+------+
+|      |Instance             |Module           |Cells |
++------+---------------------+-----------------+------+
+|1     |top                  |                 |  9773|
+|2     |  U0                 |shuffler         |  9773|
+|3     |    shuffler_control |shuffler_control |  2051|
+|4     |    shuffler_data    |shuffler_data    |   619|
+|5     |      fifo_i         |fifo             |   155|
+|6     |    multOp           |multOp_funnel    |     8|
+|7     |    multOp__0        |multOp_funnel__1 |     8|
++------+---------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.234 ; gain = 1321.312 ; free physical = 7542 ; free virtual = 24543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 2759.234 ; gain = 717.727 ; free physical = 7584 ; free virtual = 24586
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2759.242 ; gain = 1321.312 ; free physical = 7584 ; free virtual = 24586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  BUFG => BUFGCE: 8 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 2 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances
+
+275 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 2791.250 ; gain = 1407.719 ; free physical = 7216 ; free virtual = 24218
+INFO: [Common 17-1381] The checkpoint '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.runs/system_artico3_shuffler_0_0_synth_1/system_artico3_shuffler_0_0.dcp' has been generated.

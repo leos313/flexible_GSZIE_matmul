@@ -1,0 +1,141 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Tue Sep 25 11:51:19 2018
+| Host         : leonardo-pc running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_drc -file system_wrapper_drc_opted.rpt
+| Design       : system_wrapper
+| Device       : xczu9eg-ffvb1156-2-i
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 20
++----------+----------+------------------------------------------+------------+
+| Rule     | Severity | Description                              | Violations |
++----------+----------+------------------------------------------+------------+
+| DPIP-2   | Warning  | Input pipelining                         | 4          |
+| DPOP-3   | Warning  | PREG Output pipelining                   | 2          |
+| DPOP-4   | Warning  | MREG Output pipelining                   | 2          |
+| HDPRA-52 | Advisory | Narrow Edge without Location Constraints | 4          |
+| HDPRA-54 | Advisory | Edge without Location Constraints        | 4          |
+| HDPRA-56 | Advisory | Narrow Gap without Location Constraints  | 4          |
++----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp input system_i/artico3_shuffler_0/U0/multOp/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp input system_i/artico3_shuffler_0/U0/multOp/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp__0 input system_i/artico3_shuffler_0/U0/multOp__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp__0 input system_i/artico3_shuffler_0/U0/multOp__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp output system_i/artico3_shuffler_0/U0/multOp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp__0 output system_i/artico3_shuffler_0/U0/multOp__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp multiplier stage system_i/artico3_shuffler_0/U0/multOp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP system_i/artico3_shuffler_0/U0/multOp__0 multiplier stage system_i/artico3_shuffler_0/U0/multOp__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+HDPRA-52#1 Advisory
+Narrow Edge without Location Constraints  
+Static Logic contains narrow edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_3'.  Removing the static edge will allow for continuous placement.  TAG='52_RE_S_RP1'.  Sites on edge: SLICE_X96Y419, SLICE_X96Y418, SLICE_X96Y417, SLICE_X96Y416, SLICE_X96Y415, SLICE_X96Y414, SLICE_X96Y413, SLICE_X96Y412, SLICE_X96Y411, SLICE_X96Y410, SLICE_X96Y409, SLICE_X96Y408, SLICE_X96Y407, SLICE_X96Y406, SLICE_X96Y405, SLICE_X96Y404, SLICE_X96Y403, SLICE_X96Y402, SLICE_X96Y401, SLICE_X96Y400, SLICE_X96Y399, SLICE_X96Y398, SLICE_X96Y397, SLICE_X96Y396, SLICE_X96Y395, SLICE_X96Y394, SLICE_X96Y393, SLICE_X96Y392, SLICE_X96Y391, SLICE_X96Y390, SLICE_X96Y389, SLICE_X96Y388, SLICE_X96Y387, SLICE_X96Y386, SLICE_X96Y385, SLICE_X96Y384, SLICE_X96Y383, SLICE_X96Y382, SLICE_X96Y381, SLICE_X96Y380, SLICE_X96Y379, SLICE_X96Y378, SLICE_X96Y377, SLICE_X96Y376, SLICE_X96Y375, SLICE_X96Y374, SLICE_X96Y373, SLICE_X96Y372, SLICE_X96Y371, SLICE_X96Y370, SLICE_X96Y369, SLICE_X96Y368, SLICE_X96Y367, SLICE_X96Y366, SLICE_X96Y365, SLICE_X96Y364, SLICE_X96Y363, SLICE_X96Y362, SLICE_X96Y361, SLICE_X96Y360
+Related violations: <none>
+
+HDPRA-52#2 Advisory
+Narrow Edge without Location Constraints  
+Static Logic contains narrow edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_3'.  Removing the static edge will allow for continuous placement.  TAG='52_RE_S_RP2'.  Sites on edge: SLICE_X96Y359, SLICE_X96Y358, SLICE_X96Y357, SLICE_X96Y356, SLICE_X96Y355, SLICE_X96Y354, SLICE_X96Y353, SLICE_X96Y352, SLICE_X96Y351, SLICE_X96Y350, SLICE_X96Y349, SLICE_X96Y348, SLICE_X96Y347, SLICE_X96Y346, SLICE_X96Y345, SLICE_X96Y344, SLICE_X96Y343, SLICE_X96Y342, SLICE_X96Y341, SLICE_X96Y340, SLICE_X96Y339, SLICE_X96Y338, SLICE_X96Y337, SLICE_X96Y336, SLICE_X96Y335, SLICE_X96Y334, SLICE_X96Y333, SLICE_X96Y332, SLICE_X96Y331, SLICE_X96Y330, SLICE_X96Y329, SLICE_X96Y328, SLICE_X96Y327, SLICE_X96Y326, SLICE_X96Y325, SLICE_X96Y324, SLICE_X96Y323, SLICE_X96Y322, SLICE_X96Y321, SLICE_X96Y320, SLICE_X96Y319, SLICE_X96Y318, SLICE_X96Y317, SLICE_X96Y316, SLICE_X96Y315, SLICE_X96Y314, SLICE_X96Y313, SLICE_X96Y312, SLICE_X96Y311, SLICE_X96Y310, SLICE_X96Y309, SLICE_X96Y308, SLICE_X96Y307, SLICE_X96Y306, SLICE_X96Y305, SLICE_X96Y304, SLICE_X96Y303, SLICE_X96Y302, SLICE_X96Y301, SLICE_X96Y300
+Related violations: <none>
+
+HDPRA-52#3 Advisory
+Narrow Edge without Location Constraints  
+Static Logic contains narrow edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_3'.  Removing the static edge will allow for continuous placement.  TAG='52_RE_S_RP3'.  Sites on edge: SLICE_X96Y299, SLICE_X96Y298, SLICE_X96Y297, SLICE_X96Y296, SLICE_X96Y295, SLICE_X96Y294, SLICE_X96Y293, SLICE_X96Y292, SLICE_X96Y291, SLICE_X96Y290, SLICE_X96Y289, SLICE_X96Y288, SLICE_X96Y287, SLICE_X96Y286, SLICE_X96Y285, SLICE_X96Y284, SLICE_X96Y283, SLICE_X96Y282, SLICE_X96Y281, SLICE_X96Y280, SLICE_X96Y279, SLICE_X96Y278, SLICE_X96Y277, SLICE_X96Y276, SLICE_X96Y275, SLICE_X96Y274, SLICE_X96Y273, SLICE_X96Y272, SLICE_X96Y271, SLICE_X96Y270, SLICE_X96Y269, SLICE_X96Y268, SLICE_X96Y267, SLICE_X96Y266, SLICE_X96Y265, SLICE_X96Y264, SLICE_X96Y263, SLICE_X96Y262, SLICE_X96Y261, SLICE_X96Y260, SLICE_X96Y259, SLICE_X96Y258, SLICE_X96Y257, SLICE_X96Y256, SLICE_X96Y255, SLICE_X96Y254, SLICE_X96Y253, SLICE_X96Y252, SLICE_X96Y251, SLICE_X96Y250, SLICE_X96Y249, SLICE_X96Y248, SLICE_X96Y247, SLICE_X96Y246, SLICE_X96Y245, SLICE_X96Y244, SLICE_X96Y243, SLICE_X96Y242, SLICE_X96Y241, SLICE_X96Y240
+Related violations: <none>
+
+HDPRA-52#4 Advisory
+Narrow Edge without Location Constraints  
+Static Logic contains narrow edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_3'.  Removing the static edge will allow for continuous placement.  TAG='52_RE_S_RP5'.  Sites on edge: SLICE_X96Y239, SLICE_X96Y238, SLICE_X96Y237, SLICE_X96Y236, SLICE_X96Y235, SLICE_X96Y234, SLICE_X96Y233, SLICE_X96Y232, SLICE_X96Y231, SLICE_X96Y230, SLICE_X96Y229, SLICE_X96Y228, SLICE_X96Y227, SLICE_X96Y226, SLICE_X96Y225, SLICE_X96Y224, SLICE_X96Y223, SLICE_X96Y222, SLICE_X96Y221, SLICE_X96Y220, SLICE_X96Y219, SLICE_X96Y218, SLICE_X96Y217, SLICE_X96Y216, SLICE_X96Y215, SLICE_X96Y214, SLICE_X96Y213, SLICE_X96Y212, SLICE_X96Y211, SLICE_X96Y210, SLICE_X96Y209, SLICE_X96Y208, SLICE_X96Y207, SLICE_X96Y206, SLICE_X96Y205, SLICE_X96Y204, SLICE_X96Y203, SLICE_X96Y202, SLICE_X96Y201, SLICE_X96Y200, SLICE_X96Y199, SLICE_X96Y198, SLICE_X96Y197, SLICE_X96Y196, SLICE_X96Y195, SLICE_X96Y194, SLICE_X96Y193, SLICE_X96Y192, SLICE_X96Y191, SLICE_X96Y190, SLICE_X96Y189, SLICE_X96Y188, SLICE_X96Y187, SLICE_X96Y186, SLICE_X96Y185, SLICE_X96Y184, SLICE_X96Y183, SLICE_X96Y182, SLICE_X96Y181, SLICE_X96Y180
+Related violations: <none>
+
+HDPRA-54#1 Advisory
+Edge without Location Constraints  
+Static Logic contains edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_7'.  Removing the static edge will allow for continuous placement.  TAG='54_LE_S_RP4'  Sites on edge: SLICE_X0Y359, SLICE_X0Y358, SLICE_X0Y357, SLICE_X0Y356, SLICE_X0Y355, SLICE_X0Y354, SLICE_X0Y353, SLICE_X0Y352, SLICE_X0Y351, SLICE_X0Y350, SLICE_X0Y349, SLICE_X0Y348, SLICE_X0Y347, SLICE_X0Y346, SLICE_X0Y345, SLICE_X0Y344, SLICE_X0Y343, SLICE_X0Y342, SLICE_X0Y341, SLICE_X0Y340, SLICE_X0Y339, SLICE_X0Y338, SLICE_X0Y337, SLICE_X0Y336, SLICE_X0Y335, SLICE_X0Y334, SLICE_X0Y333, SLICE_X0Y332, SLICE_X0Y331, SLICE_X0Y330, SLICE_X0Y329, SLICE_X0Y328, SLICE_X0Y327, SLICE_X0Y326, SLICE_X0Y325, SLICE_X0Y324, SLICE_X0Y323, SLICE_X0Y322, SLICE_X0Y321, SLICE_X0Y320, SLICE_X0Y319, SLICE_X0Y318, SLICE_X0Y317, SLICE_X0Y316, SLICE_X0Y315, SLICE_X0Y314, SLICE_X0Y313, SLICE_X0Y312, SLICE_X0Y311, SLICE_X0Y310, SLICE_X0Y309, SLICE_X0Y308, SLICE_X0Y307, SLICE_X0Y306, SLICE_X0Y305, SLICE_X0Y304, SLICE_X0Y303, SLICE_X0Y302, SLICE_X0Y301, SLICE_X0Y300
+Related violations: <none>
+
+HDPRA-54#2 Advisory
+Edge without Location Constraints  
+Static Logic contains edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_7'.  Removing the static edge will allow for continuous placement.  TAG='54_LE_S_RP6'  Sites on edge: SLICE_X0Y419, SLICE_X0Y418, SLICE_X0Y417, SLICE_X0Y416, SLICE_X0Y415, SLICE_X0Y414, SLICE_X0Y413, SLICE_X0Y412, SLICE_X0Y411, SLICE_X0Y410, SLICE_X0Y409, SLICE_X0Y408, SLICE_X0Y407, SLICE_X0Y406, SLICE_X0Y405, SLICE_X0Y404, SLICE_X0Y403, SLICE_X0Y402, SLICE_X0Y401, SLICE_X0Y400, SLICE_X0Y399, SLICE_X0Y398, SLICE_X0Y397, SLICE_X0Y396, SLICE_X0Y395, SLICE_X0Y394, SLICE_X0Y393, SLICE_X0Y392, SLICE_X0Y391, SLICE_X0Y390, SLICE_X0Y389, SLICE_X0Y388, SLICE_X0Y387, SLICE_X0Y386, SLICE_X0Y385, SLICE_X0Y384, SLICE_X0Y383, SLICE_X0Y382, SLICE_X0Y381, SLICE_X0Y380, SLICE_X0Y379, SLICE_X0Y378, SLICE_X0Y377, SLICE_X0Y376, SLICE_X0Y375, SLICE_X0Y374, SLICE_X0Y373, SLICE_X0Y372, SLICE_X0Y371, SLICE_X0Y370, SLICE_X0Y369, SLICE_X0Y368, SLICE_X0Y367, SLICE_X0Y366, SLICE_X0Y365, SLICE_X0Y364, SLICE_X0Y363, SLICE_X0Y362, SLICE_X0Y361, SLICE_X0Y360
+Related violations: <none>
+
+HDPRA-54#3 Advisory
+Edge without Location Constraints  
+Static Logic contains edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_7'.  Removing the static edge will allow for continuous placement.  TAG='54_LE_S_RP7'  Sites on edge: SLICE_X0Y299, SLICE_X0Y298, SLICE_X0Y297, SLICE_X0Y296, SLICE_X0Y295, SLICE_X0Y294, SLICE_X0Y293, SLICE_X0Y292, SLICE_X0Y291, SLICE_X0Y290, SLICE_X0Y289, SLICE_X0Y288, SLICE_X0Y287, SLICE_X0Y286, SLICE_X0Y285, SLICE_X0Y284, SLICE_X0Y283, SLICE_X0Y282, SLICE_X0Y281, SLICE_X0Y280, SLICE_X0Y279, SLICE_X0Y278, SLICE_X0Y277, SLICE_X0Y276, SLICE_X0Y275, SLICE_X0Y274, SLICE_X0Y273, SLICE_X0Y272, SLICE_X0Y271, SLICE_X0Y270, SLICE_X0Y269, SLICE_X0Y268, SLICE_X0Y267, SLICE_X0Y266, SLICE_X0Y265, SLICE_X0Y264, SLICE_X0Y263, SLICE_X0Y262, SLICE_X0Y261, SLICE_X0Y260, SLICE_X0Y259, SLICE_X0Y258, SLICE_X0Y257, SLICE_X0Y256, SLICE_X0Y255, SLICE_X0Y254, SLICE_X0Y253, SLICE_X0Y252, SLICE_X0Y251, SLICE_X0Y250, SLICE_X0Y249, SLICE_X0Y248, SLICE_X0Y247, SLICE_X0Y246, SLICE_X0Y245, SLICE_X0Y244, SLICE_X0Y243, SLICE_X0Y242, SLICE_X0Y241, SLICE_X0Y240
+Related violations: <none>
+
+HDPRA-54#4 Advisory
+Edge without Location Constraints  
+Static Logic contains edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'a3_slot_7'.  Removing the static edge will allow for continuous placement.  TAG='54_LE_S_RP8'  Sites on edge: SLICE_X0Y239, SLICE_X0Y238, SLICE_X0Y237, SLICE_X0Y236, SLICE_X0Y235, SLICE_X0Y234, SLICE_X0Y233, SLICE_X0Y232, SLICE_X0Y231, SLICE_X0Y230, SLICE_X0Y229, SLICE_X0Y228, SLICE_X0Y227, SLICE_X0Y226, SLICE_X0Y225, SLICE_X0Y224, SLICE_X0Y223, SLICE_X0Y222, SLICE_X0Y221, SLICE_X0Y220, SLICE_X0Y219, SLICE_X0Y218, SLICE_X0Y217, SLICE_X0Y216, SLICE_X0Y215, SLICE_X0Y214, SLICE_X0Y213, SLICE_X0Y212, SLICE_X0Y211, SLICE_X0Y210, SLICE_X0Y209, SLICE_X0Y208, SLICE_X0Y207, SLICE_X0Y206, SLICE_X0Y205, SLICE_X0Y204, SLICE_X0Y203, SLICE_X0Y202, SLICE_X0Y201, SLICE_X0Y200, SLICE_X0Y199, SLICE_X0Y198, SLICE_X0Y197, SLICE_X0Y196, SLICE_X0Y195, SLICE_X0Y194, SLICE_X0Y193, SLICE_X0Y192, SLICE_X0Y191, SLICE_X0Y190, SLICE_X0Y189, SLICE_X0Y188, SLICE_X0Y187, SLICE_X0Y186, SLICE_X0Y185, SLICE_X0Y184, SLICE_X0Y183, SLICE_X0Y182, SLICE_X0Y181, SLICE_X0Y180
+Related violations: <none>
+
+HDPRA-56#1 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'a3_slot_0' contains a narrow gap that may impacts implementation results.  It is best to include these region(s) in the RP pblock.  Removing the narrow gap will allow for continuous placement.  TAG='56_G59_RP1_S'.  Sites in gap: SLICE_X85Y419, SLICE_X85Y418, SLICE_X85Y417, SLICE_X85Y416, SLICE_X85Y415, SLICE_X85Y414, SLICE_X85Y413, SLICE_X85Y412, SLICE_X85Y411, SLICE_X85Y410, SLICE_X85Y409, SLICE_X85Y408, SLICE_X85Y407, SLICE_X85Y406, SLICE_X85Y405, SLICE_X85Y404, SLICE_X85Y403, SLICE_X85Y402, SLICE_X85Y401, SLICE_X85Y400, SLICE_X85Y399, SLICE_X85Y398, SLICE_X85Y397, SLICE_X85Y396, SLICE_X85Y395, SLICE_X85Y394, SLICE_X85Y393, SLICE_X85Y392, SLICE_X85Y391, SLICE_X85Y390, SLICE_X85Y389, SLICE_X85Y388, SLICE_X85Y387, SLICE_X85Y386, SLICE_X85Y385, SLICE_X85Y384, SLICE_X85Y383, SLICE_X85Y382, SLICE_X85Y381, SLICE_X85Y380, SLICE_X85Y379, SLICE_X85Y378, SLICE_X85Y377, SLICE_X85Y376, SLICE_X85Y375, SLICE_X85Y374, SLICE_X85Y373, SLICE_X85Y372, SLICE_X85Y371, SLICE_X85Y370, SLICE_X85Y369, SLICE_X85Y368, SLICE_X85Y367, SLICE_X85Y366, SLICE_X85Y365, SLICE_X85Y364, SLICE_X85Y363, SLICE_X85Y362, SLICE_X85Y361, SLICE_X85Y360
+Related violations: <none>
+
+HDPRA-56#2 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'a3_slot_1' contains a narrow gap that may impacts implementation results.  It is best to include these region(s) in the RP pblock.  Removing the narrow gap will allow for continuous placement.  TAG='56_G59_RP2_S'.  Sites in gap: SLICE_X85Y359, SLICE_X85Y358, SLICE_X85Y357, SLICE_X85Y356, SLICE_X85Y355, SLICE_X85Y354, SLICE_X85Y353, SLICE_X85Y352, SLICE_X85Y351, SLICE_X85Y350, SLICE_X85Y349, SLICE_X85Y348, SLICE_X85Y347, SLICE_X85Y346, SLICE_X85Y345, SLICE_X85Y344, SLICE_X85Y343, SLICE_X85Y342, SLICE_X85Y341, SLICE_X85Y340, SLICE_X85Y339, SLICE_X85Y338, SLICE_X85Y337, SLICE_X85Y336, SLICE_X85Y335, SLICE_X85Y334, SLICE_X85Y333, SLICE_X85Y332, SLICE_X85Y331, SLICE_X85Y330, SLICE_X85Y329, SLICE_X85Y328, SLICE_X85Y327, SLICE_X85Y326, SLICE_X85Y325, SLICE_X85Y324, SLICE_X85Y323, SLICE_X85Y322, SLICE_X85Y321, SLICE_X85Y320, SLICE_X85Y319, SLICE_X85Y318, SLICE_X85Y317, SLICE_X85Y316, SLICE_X85Y315, SLICE_X85Y314, SLICE_X85Y313, SLICE_X85Y312, SLICE_X85Y311, SLICE_X85Y310, SLICE_X85Y309, SLICE_X85Y308, SLICE_X85Y307, SLICE_X85Y306, SLICE_X85Y305, SLICE_X85Y304, SLICE_X85Y303, SLICE_X85Y302, SLICE_X85Y301, SLICE_X85Y300
+Related violations: <none>
+
+HDPRA-56#3 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'a3_slot_2' contains a narrow gap that may impacts implementation results.  It is best to include these region(s) in the RP pblock.  Removing the narrow gap will allow for continuous placement.  TAG='56_G59_RP3_S'.  Sites in gap: SLICE_X85Y299, SLICE_X85Y298, SLICE_X85Y297, SLICE_X85Y296, SLICE_X85Y295, SLICE_X85Y294, SLICE_X85Y293, SLICE_X85Y292, SLICE_X85Y291, SLICE_X85Y290, SLICE_X85Y289, SLICE_X85Y288, SLICE_X85Y287, SLICE_X85Y286, SLICE_X85Y285, SLICE_X85Y284, SLICE_X85Y283, SLICE_X85Y282, SLICE_X85Y281, SLICE_X85Y280, SLICE_X85Y279, SLICE_X85Y278, SLICE_X85Y277, SLICE_X85Y276, SLICE_X85Y275, SLICE_X85Y274, SLICE_X85Y273, SLICE_X85Y272, SLICE_X85Y271, SLICE_X85Y270, SLICE_X85Y269, SLICE_X85Y268, SLICE_X85Y267, SLICE_X85Y266, SLICE_X85Y265, SLICE_X85Y264, SLICE_X85Y263, SLICE_X85Y262, SLICE_X85Y261, SLICE_X85Y260, SLICE_X85Y259, SLICE_X85Y258, SLICE_X85Y257, SLICE_X85Y256, SLICE_X85Y255, SLICE_X85Y254, SLICE_X85Y253, SLICE_X85Y252, SLICE_X85Y251, SLICE_X85Y250, SLICE_X85Y249, SLICE_X85Y248, SLICE_X85Y247, SLICE_X85Y246, SLICE_X85Y245, SLICE_X85Y244, SLICE_X85Y243, SLICE_X85Y242, SLICE_X85Y241, SLICE_X85Y240
+Related violations: <none>
+
+HDPRA-56#4 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'a3_slot_3' contains a narrow gap that may impacts implementation results.  It is best to include these region(s) in the RP pblock.  Removing the narrow gap will allow for continuous placement.  TAG='56_G59_RP5_S'.  Sites in gap: SLICE_X85Y239, SLICE_X85Y238, SLICE_X85Y237, SLICE_X85Y236, SLICE_X85Y235, SLICE_X85Y234, SLICE_X85Y233, SLICE_X85Y232, SLICE_X85Y231, SLICE_X85Y230, SLICE_X85Y229, SLICE_X85Y228, SLICE_X85Y227, SLICE_X85Y226, SLICE_X85Y225, SLICE_X85Y224, SLICE_X85Y223, SLICE_X85Y222, SLICE_X85Y221, SLICE_X85Y220, SLICE_X85Y219, SLICE_X85Y218, SLICE_X85Y217, SLICE_X85Y216, SLICE_X85Y215, SLICE_X85Y214, SLICE_X85Y213, SLICE_X85Y212, SLICE_X85Y211, SLICE_X85Y210, SLICE_X85Y209, SLICE_X85Y208, SLICE_X85Y207, SLICE_X85Y206, SLICE_X85Y205, SLICE_X85Y204, SLICE_X85Y203, SLICE_X85Y202, SLICE_X85Y201, SLICE_X85Y200, SLICE_X85Y199, SLICE_X85Y198, SLICE_X85Y197, SLICE_X85Y196, SLICE_X85Y195, SLICE_X85Y194, SLICE_X85Y193, SLICE_X85Y192, SLICE_X85Y191, SLICE_X85Y190, SLICE_X85Y189, SLICE_X85Y188, SLICE_X85Y187, SLICE_X85Y186, SLICE_X85Y185, SLICE_X85Y184, SLICE_X85Y183, SLICE_X85Y182, SLICE_X85Y181, SLICE_X85Y180
+Related violations: <none>
+
+

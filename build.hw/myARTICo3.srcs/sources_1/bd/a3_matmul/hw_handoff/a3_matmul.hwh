@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 25 11:49:28 2018" VIVADOVERSION="2017.1">
+
+  <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu102:part0:3.0" DEVICE="xczu9eg" NAME="a3_matmul" PACKAGE="ffvb1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_artico3_artico3_aclk" SIGIS="clk"/>
+    <PORT DIR="I" NAME="s_artico3_artico3_aresetn" SIGIS="rst"/>
+    <PORT DIR="I" NAME="s_artico3_artico3_start" SIGIS="undef"/>
+    <PORT DIR="O" NAME="s_artico3_artico3_ready" SIGIS="undef"/>
+    <PORT DIR="I" NAME="s_artico3_artico3_en" SIGIS="undef"/>
+    <PORT DIR="I" NAME="s_artico3_artico3_we" SIGIS="undef"/>
+    <PORT DIR="I" NAME="s_artico3_artico3_mode" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="s_artico3_artico3_addr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="s_artico3_artico3_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="s_artico3_artico3_rdata" RIGHT="0" SIGIS="undef"/>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_s_artico3" NAME="s_artico3" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="artico3_aclk" PHYSICAL="s_artico3_artico3_aclk"/>
+        <PORTMAP LOGICAL="artico3_aresetn" PHYSICAL="s_artico3_artico3_aresetn"/>
+        <PORTMAP LOGICAL="artico3_start" PHYSICAL="s_artico3_artico3_start"/>
+        <PORTMAP LOGICAL="artico3_ready" PHYSICAL="s_artico3_artico3_ready"/>
+        <PORTMAP LOGICAL="artico3_en" PHYSICAL="s_artico3_artico3_en"/>
+        <PORTMAP LOGICAL="artico3_we" PHYSICAL="s_artico3_artico3_we"/>
+        <PORTMAP LOGICAL="artico3_mode" PHYSICAL="s_artico3_artico3_mode"/>
+        <PORTMAP LOGICAL="artico3_addr" PHYSICAL="s_artico3_artico3_addr"/>
+        <PORTMAP LOGICAL="artico3_wdata" PHYSICAL="s_artico3_artico3_wdata"/>
+        <PORTMAP LOGICAL="artico3_rdata" PHYSICAL="s_artico3_artico3_rdata"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE FULLNAME="/slot" HWVERSION="1.0" INSTANCE="slot" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="a3_matmul" VLNV="cei.upm.es:artico3:a3_matmul:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_ARTICO3_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_ARTICO3_ADDR_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_MAX_MEM" VALUE="49152"/>
+        <PARAMETER NAME="C_NUM_MEM" VALUE="3"/>
+        <PARAMETER NAME="C_NUM_REG" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="a3_matmul_slot_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_artico3_aclk" SIGIS="clk"/>
+        <PORT DIR="I" NAME="s_artico3_aresetn" SIGIS="rst"/>
+        <PORT DIR="I" NAME="s_artico3_start" SIGIS="undef"/>
+        <PORT DIR="O" NAME="s_artico3_ready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_artico3_en" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_artico3_we" SIGIS="undef"/>
+        <PORT DIR="I" NAME="s_artico3_mode" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="s_artico3_addr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="s_artico3_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="s_artico3_rdata" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_s_artico3" NAME="s_artico3" TYPE="TARGET" VLNV="cei.upm.es:artico3:artico3:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="artico3_aclk" PHYSICAL="s_artico3_aclk"/>
+            <PORTMAP LOGICAL="artico3_aresetn" PHYSICAL="s_artico3_aresetn"/>
+            <PORTMAP LOGICAL="artico3_start" PHYSICAL="s_artico3_start"/>
+            <PORTMAP LOGICAL="artico3_ready" PHYSICAL="s_artico3_ready"/>
+            <PORTMAP LOGICAL="artico3_en" PHYSICAL="s_artico3_en"/>
+            <PORTMAP LOGICAL="artico3_we" PHYSICAL="s_artico3_we"/>
+            <PORTMAP LOGICAL="artico3_mode" PHYSICAL="s_artico3_mode"/>
+            <PORTMAP LOGICAL="artico3_addr" PHYSICAL="s_artico3_addr"/>
+            <PORTMAP LOGICAL="artico3_wdata" PHYSICAL="s_artico3_wdata"/>
+            <PORTMAP LOGICAL="artico3_rdata" PHYSICAL="s_artico3_rdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

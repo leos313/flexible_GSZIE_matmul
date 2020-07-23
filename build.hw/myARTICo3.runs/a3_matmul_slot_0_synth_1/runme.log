@@ -1,0 +1,1244 @@
+
+*** Running vivado
+    with args -log a3_matmul_slot_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source a3_matmul_slot_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source a3_matmul_slot_0.tcl -notrace
+Command: synth_design -top a3_matmul_slot_0 -part xczu9eg-ffvb1156-2-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg-ffvb1156'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg-ffvb1156'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -268 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20209 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1437.926 ; gain = 0.000 ; free physical = 11278 ; free virtual = 28333
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port values is neither a static name nor a globally static expression [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'a3_matmul_slot_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ip/a3_matmul_slot_0/synth/a3_matmul_slot_0.vhd:71]
+	Parameter C_ARTICO3_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_MAX_MEM bound to: 49152 - type: integer 
+	Parameter C_NUM_MEM bound to: 3 - type: integer 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'a3_wrapper' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:30' bound to instance 'U0' of component 'a3_wrapper' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ip/a3_matmul_slot_0/synth/a3_matmul_slot_0.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'a3_wrapper' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:52]
+	Parameter C_ARTICO3_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ARTICO3_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_MAX_MEM bound to: 49152 - type: integer 
+	Parameter C_NUM_MEM bound to: 3 - type: integer 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:59]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:63]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:66]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:69]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:78]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:79]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:80]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:81]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:83]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:84]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:92]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:93]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:94]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:100]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:101]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:108]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:109]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:110]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'matmul' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:48]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:104]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:107]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:116]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:123]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:135]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:148]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:153]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:173]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:178]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:190]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:205]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:228]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:302]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:306]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_0_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0_ram' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:13' bound to instance 'matmul_a_local_0_ram_U' of component 'matmul_a_local_0_ram' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'matmul_a_local_0_ram' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:31]
+	Parameter mem_type bound to: distributed - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 3 - type: integer 
+	Parameter mem_size bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'matmul_a_local_0_ram' (1#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'matmul_a_local_0' (2#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_1_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:418]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_2_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:432]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_3_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:446]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_4_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:460]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_5_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:474]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_6_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:488]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'a_local_7_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:502]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_0_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:516]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_1_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:530]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_2_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:544]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_3_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:558]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_4_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:572]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_5_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:586]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_6_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:600]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'matmul_a_local_0' declared at '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul_a_local_0.vhd:77' bound to instance 'b_local_7_U' of component 'matmul_a_local_0' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:614]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1410]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp1_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1411]
+WARNING: [Synth 8-6014] Unused sequential element a_local_1_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:427]
+WARNING: [Synth 8-6014] Unused sequential element a_local_2_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:441]
+WARNING: [Synth 8-6014] Unused sequential element a_local_3_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:455]
+WARNING: [Synth 8-6014] Unused sequential element a_local_4_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:469]
+WARNING: [Synth 8-6014] Unused sequential element a_local_5_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:483]
+WARNING: [Synth 8-6014] Unused sequential element a_local_6_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:497]
+WARNING: [Synth 8-6014] Unused sequential element a_local_7_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:511]
+WARNING: [Synth 8-6014] Unused sequential element ap_ready_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1446]
+WARNING: [Synth 8-6014] Unused sequential element b_local_1_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:539]
+WARNING: [Synth 8-6014] Unused sequential element b_local_2_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:553]
+WARNING: [Synth 8-6014] Unused sequential element b_local_3_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:567]
+WARNING: [Synth 8-6014] Unused sequential element b_local_4_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:581]
+WARNING: [Synth 8-6014] Unused sequential element b_local_5_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:595]
+WARNING: [Synth 8-6014] Unused sequential element b_local_6_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:609]
+WARNING: [Synth 8-6014] Unused sequential element b_local_7_ce0_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:623]
+INFO: [Synth 8-256] done synthesizing module 'matmul' (3#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'bram_dualport' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:59]
+	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_MEM_DEPTH bound to: 4096 - type: integer 
+	Parameter C_MEM_MODE bound to: LOW_LATENCY - type: string 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:30]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:34]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:39]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:41]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:43]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:99]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'bram_dualport' (4#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/bram_dualport.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element MEM_POS_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:316]
+INFO: [Synth 8-256] done synthesizing module 'a3_wrapper' (5#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/a3_wrapper.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'a3_matmul_slot_0' (6#1) [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ip/a3_matmul_slot_0/synth/a3_matmul_slot_0.vhd:71]
+WARNING: [Synth 8-3331] design bram_dualport has unconnected port rst_a
+WARNING: [Synth 8-3331] design bram_dualport has unconnected port rst_b
+WARNING: [Synth 8-3331] design matmul_a_local_0 has unconnected port reset
+WARNING: [Synth 8-3331] design matmul has unconnected port values[31]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[30]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[29]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[28]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[27]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[26]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[25]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[24]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[23]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[22]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[21]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[20]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[19]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[18]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[17]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[16]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[15]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[14]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[13]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[12]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[11]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[10]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[9]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[8]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[7]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[6]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[5]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[4]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[3]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[2]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[1]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1437.926 ; gain = 0.000 ; free physical = 11281 ; free virtual = 28336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1437.926 ; gain = 0.000 ; free physical = 11284 ; free virtual = 28340
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2003.105 ; gain = 0.000 ; free physical = 10634 ; free virtual = 27690
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2003.105 ; gain = 565.180 ; free physical = 10695 ; free virtual = 27751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2003.105 ; gain = 565.180 ; free physical = 10695 ; free virtual = 27751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2003.105 ; gain = 565.180 ; free physical = 10697 ; free virtual = 27753
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'a_local_1_addr_reg_1278_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:859]
+INFO: [Synth 8-4471] merging register 'a_local_2_addr_reg_1283_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:860]
+INFO: [Synth 8-4471] merging register 'a_local_3_addr_reg_1288_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:861]
+INFO: [Synth 8-4471] merging register 'a_local_4_addr_reg_1293_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:862]
+INFO: [Synth 8-4471] merging register 'a_local_5_addr_reg_1298_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:863]
+INFO: [Synth 8-4471] merging register 'a_local_6_addr_reg_1303_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:864]
+INFO: [Synth 8-4471] merging register 'a_local_7_addr_reg_1308_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:865]
+INFO: [Synth 8-4471] merging register 'tmp_14_reg_1313_reg[2:0]' into 'a_local_0_addr_reg_1273_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:868]
+INFO: [Synth 8-4471] merging register 'b_local_1_addr_1_reg_1348_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:899]
+INFO: [Synth 8-4471] merging register 'b_local_2_addr_1_reg_1353_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:900]
+INFO: [Synth 8-4471] merging register 'b_local_3_addr_1_reg_1358_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:901]
+INFO: [Synth 8-4471] merging register 'b_local_4_addr_1_reg_1363_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:902]
+INFO: [Synth 8-4471] merging register 'b_local_5_addr_1_reg_1368_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:903]
+INFO: [Synth 8-4471] merging register 'b_local_6_addr_1_reg_1373_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:904]
+INFO: [Synth 8-4471] merging register 'b_local_7_addr_1_reg_1378_reg[2:0]' into 'b_local_0_addr_1_reg_1343_reg[2:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:905]
+WARNING: [Synth 8-6014] Unused sequential element a_local_1_addr_reg_1278_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:859]
+WARNING: [Synth 8-6014] Unused sequential element a_local_2_addr_reg_1283_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:860]
+WARNING: [Synth 8-6014] Unused sequential element a_local_3_addr_reg_1288_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:861]
+WARNING: [Synth 8-6014] Unused sequential element a_local_4_addr_reg_1293_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:862]
+WARNING: [Synth 8-6014] Unused sequential element a_local_5_addr_reg_1298_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:863]
+WARNING: [Synth 8-6014] Unused sequential element a_local_6_addr_reg_1303_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:864]
+WARNING: [Synth 8-6014] Unused sequential element a_local_7_addr_reg_1308_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:865]
+WARNING: [Synth 8-6014] Unused sequential element tmp_14_reg_1313_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:868]
+WARNING: [Synth 8-6014] Unused sequential element b_local_1_addr_1_reg_1348_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:899]
+WARNING: [Synth 8-6014] Unused sequential element b_local_2_addr_1_reg_1353_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:900]
+WARNING: [Synth 8-6014] Unused sequential element b_local_3_addr_1_reg_1358_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:901]
+WARNING: [Synth 8-6014] Unused sequential element b_local_4_addr_1_reg_1363_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:902]
+WARNING: [Synth 8-6014] Unused sequential element b_local_5_addr_1_reg_1368_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:903]
+WARNING: [Synth 8-6014] Unused sequential element b_local_6_addr_1_reg_1373_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:904]
+WARNING: [Synth 8-6014] Unused sequential element b_local_7_addr_1_reg_1378_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:905]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_748_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_1_fu_854_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_15_fu_907_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_965_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_760_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_16_fu_977_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1716]
+WARNING: [Synth 8-6014] Unused sequential element bound_reg_1182_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element bound_reg_1182_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element bound_reg_1182_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element bram_2_addr_1_reg_1442_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:923]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_reg_570_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:782]
+WARNING: [Synth 8-6014] Unused sequential element k_reg_603_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:837]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next2_reg_1387_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:773]
+WARNING: [Synth 8-6014] Unused sequential element tmp1_mid2_v_v_v_v_reg_1226_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:738]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM mem_reg
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2003.105 ; gain = 565.180 ; free physical = 10691 ; free virtual = 27747
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     58 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 3     
+	   8 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 7     
++---Registers : 
+	               58 Bit    Registers := 2     
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 48    
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Multipliers : 
+	                32x32  Multipliers := 11    
++---RAMs : 
+	             128K Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module matmul_a_local_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module matmul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     58 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 3     
+	   8 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 7     
++---Registers : 
+	               58 Bit    Registers := 2     
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 24    
+	               13 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                32x32  Multipliers := 11    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module bram_dualport 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             128K Bit         RAMs := 1     
+Module a3_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'dummy_1_fu_112_reg[31:0]' into 'dummy_1_fu_112_reg[31:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:914]
+INFO: [Synth 8-4471] merging register 'j_mid2_reg_1201_reg[31:0]' into 'j_mid2_reg_1201_reg[31:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:964]
+INFO: [Synth 8-4471] merging register 'dummy_1_load_reg_1168_reg[31:0]' into 'dummy_1_load_reg_1168_reg[31:0]' [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:914]
+WARNING: [Synth 8-6014] Unused sequential element dummy_1_fu_112_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:914]
+WARNING: [Synth 8-6014] Unused sequential element j_mid2_reg_1201_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:964]
+WARNING: [Synth 8-6014] Unused sequential element dummy_1_load_reg_1168_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:914]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_8_reg_1231_reg' and it is trimmed from '32' to '30' bits. [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1017]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1823]
+INFO: [Synth 8-5544] ROM "data61" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_748_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_965_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1904]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1907]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1887]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1938]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1939]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1937]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1927]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1930]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1933]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1936]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1914]
+WARNING: [Synth 8-6014] Unused sequential element tmp_10_reg_1263_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:866]
+WARNING: [Synth 8-6014] Unused sequential element tmp_13_reg_1268_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:867]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_1_reg_1507_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1008]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_2_reg_1512_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1009]
+WARNING: [Synth 8-6014] Unused sequential element tmp_19_reg_1502_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1007]
+WARNING: [Synth 8-6014] Unused sequential element bound_reg_1182_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element bound_reg_1182_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element tmp_10_reg_1263_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:866]
+WARNING: [Synth 8-6014] Unused sequential element tmp_10_reg_1263_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:866]
+WARNING: [Synth 8-6014] Unused sequential element tmp_13_reg_1268_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:867]
+WARNING: [Synth 8-6014] Unused sequential element tmp_13_reg_1268_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:867]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_1_reg_1507_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1008]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_1_reg_1507_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1008]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_2_reg_1512_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1009]
+WARNING: [Synth 8-6014] Unused sequential element tmp_31_2_reg_1512_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1009]
+WARNING: [Synth 8-6014] Unused sequential element tmp_19_reg_1502_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1007]
+WARNING: [Synth 8-6014] Unused sequential element tmp_19_reg_1502_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1007]
+WARNING: [Synth 8-6014] Unused sequential element bram_2_addr_1_reg_1442_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:923]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1904]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1904]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:866]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:866]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1907]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1907]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:867]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:867]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1887]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1887]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1887]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1887]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1938]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1938]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1938]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1938]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1939]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1939]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1939]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1939]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1937]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1937]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1937]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:1937]
+WARNING: [Synth 8-6014] Unused sequential element k_reg_603_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:837]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_reg_570_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:782]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next2_reg_1387_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:773]
+WARNING: [Synth 8-6014] Unused sequential element tmp1_mid2_v_v_v_v_reg_1226_reg was removed.  [/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ipshared/f2db/hdl/vhdl/matmul.vhd:738]
+DSP Report: Generating DSP bound_fu_704_p2, operation Mode is: A*B.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_fu_704_p2.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_fu_704_p2.
+DSP Report: Generating DSP bound_reg_1182_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register bound_reg_1182_reg is absorbed into DSP bound_reg_1182_reg.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_reg_1182_reg.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_reg_1182_reg.
+DSP Report: Generating DSP bound_fu_704_p2, operation Mode is: A*B.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_fu_704_p2.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_fu_704_p2.
+DSP Report: Generating DSP bound_reg_1182_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register bound_reg_1182_reg is absorbed into DSP bound_reg_1182_reg.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_reg_1182_reg.
+DSP Report: operator bound_fu_704_p2 is absorbed into DSP bound_reg_1182_reg.
+DSP Report: Generating DSP tmp_10_fu_871_p2, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: Generating DSP tmp_10_reg_1263_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: register tmp_10_reg_1263_reg is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: Generating DSP tmp_10_fu_871_p2, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: register A is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_fu_871_p2.
+DSP Report: Generating DSP tmp_10_reg_1263_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: register A is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: register tmp_10_reg_1263_reg is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: operator tmp_10_fu_871_p2 is absorbed into DSP tmp_10_reg_1263_reg.
+DSP Report: Generating DSP tmp_13_fu_894_p2, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: Generating DSP tmp_13_reg_1268_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: register tmp_13_reg_1268_reg is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: Generating DSP tmp_13_fu_894_p2, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: register A is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_fu_894_p2.
+DSP Report: Generating DSP tmp_13_reg_1268_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: register A is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: register tmp_13_reg_1268_reg is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: operator tmp_13_fu_894_p2 is absorbed into DSP tmp_13_reg_1268_reg.
+DSP Report: Generating DSP tmp1_mid2_v_fu_797_p2, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: Generating DSP tmp1_mid2_v_fu_797_p2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: Generating DSP tmp1_mid2_v_fu_797_p2, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: register A is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: Generating DSP tmp1_mid2_v_fu_797_p2, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: register A is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: operator tmp1_mid2_v_fu_797_p2 is absorbed into DSP tmp1_mid2_v_fu_797_p2.
+DSP Report: Generating DSP tmp4_mid2_v_fu_1026_p2, operation Mode is: A*B''.
+DSP Report: register dummy_1_fu_112_reg is absorbed into DSP tmp4_mid2_v_fu_1026_p2.
+DSP Report: register dummy_1_load_reg_1168_reg is absorbed into DSP tmp4_mid2_v_fu_1026_p2.
+DSP Report: operator tmp4_mid2_v_fu_1026_p2 is absorbed into DSP tmp4_mid2_v_fu_1026_p2.
+DSP Report: Generating DSP bram_2_addr_1_reg_1442_reg, operation Mode is: (PCIN+(A:0x0):B2+C)'.
+DSP Report: register j_mid2_reg_1201_reg is absorbed into DSP bram_2_addr_1_reg_1442_reg.
+DSP Report: register bram_2_addr_1_reg_1442_reg is absorbed into DSP bram_2_addr_1_reg_1442_reg.
+DSP Report: operator tmp_23_fu_1052_p2 is absorbed into DSP bram_2_addr_1_reg_1442_reg.
+DSP Report: Generating DSP tmp_31_6_fu_1109_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: Generating DSP tmp_31_6_fu_1109_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: Generating DSP tmp_31_6_fu_1109_p2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: register A is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: Generating DSP tmp_31_6_fu_1109_p2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: operator tmp_31_6_fu_1109_p2 is absorbed into DSP tmp_31_6_fu_1109_p2.
+DSP Report: Generating DSP tmp_31_7_fu_1113_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: Generating DSP tmp_31_7_fu_1113_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: Generating DSP tmp_31_7_fu_1113_p2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: register A is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: Generating DSP tmp_31_7_fu_1113_p2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: operator tmp_31_7_fu_1113_p2 is absorbed into DSP tmp_31_7_fu_1113_p2.
+DSP Report: Generating DSP tmp_31_5_fu_1105_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: Generating DSP tmp_31_5_fu_1105_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: Generating DSP tmp_31_5_fu_1105_p2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: register A is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: Generating DSP tmp_31_5_fu_1105_p2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: operator tmp_31_5_fu_1105_p2 is absorbed into DSP tmp_31_5_fu_1105_p2.
+DSP Report: Generating DSP tmp_31_1_fu_1075_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_fu_1075_p2.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_fu_1075_p2.
+DSP Report: Generating DSP tmp_31_1_reg_1507_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_31_1_reg_1507_reg is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: Generating DSP tmp_31_1_fu_1075_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_fu_1075_p2.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_fu_1075_p2.
+DSP Report: Generating DSP tmp_31_1_reg_1507_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_31_1_reg_1507_reg is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: operator tmp_31_1_fu_1075_p2 is absorbed into DSP tmp_31_1_reg_1507_reg.
+DSP Report: Generating DSP tmp_31_2_fu_1081_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_fu_1081_p2.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_fu_1081_p2.
+DSP Report: Generating DSP tmp_31_2_reg_1512_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_31_2_reg_1512_reg is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: Generating DSP tmp_31_2_fu_1081_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_fu_1081_p2.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_fu_1081_p2.
+DSP Report: Generating DSP tmp_31_2_reg_1512_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_31_2_reg_1512_reg is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: operator tmp_31_2_fu_1081_p2 is absorbed into DSP tmp_31_2_reg_1512_reg.
+DSP Report: Generating DSP tmp_31_3_fu_1087_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: Generating DSP tmp_31_3_fu_1087_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: Generating DSP tmp_31_3_fu_1087_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: Generating DSP tmp_31_3_fu_1087_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: operator tmp_31_3_fu_1087_p2 is absorbed into DSP tmp_31_3_fu_1087_p2.
+DSP Report: Generating DSP tmp_31_4_fu_1093_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: Generating DSP tmp_31_4_fu_1093_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: Generating DSP tmp_31_4_fu_1093_p2, operation Mode is: A*B.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: Generating DSP tmp_31_4_fu_1093_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: operator tmp_31_4_fu_1093_p2 is absorbed into DSP tmp_31_4_fu_1093_p2.
+DSP Report: Generating DSP tmp_19_fu_1069_p2, operation Mode is: A*B.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_fu_1069_p2.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_fu_1069_p2.
+DSP Report: Generating DSP tmp_19_reg_1502_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_19_reg_1502_reg is absorbed into DSP tmp_19_reg_1502_reg.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_reg_1502_reg.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_reg_1502_reg.
+DSP Report: Generating DSP tmp_19_fu_1069_p2, operation Mode is: A*B.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_fu_1069_p2.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_fu_1069_p2.
+DSP Report: Generating DSP tmp_19_reg_1502_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_19_reg_1502_reg is absorbed into DSP tmp_19_reg_1502_reg.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_reg_1502_reg.
+DSP Report: operator tmp_19_fu_1069_p2 is absorbed into DSP tmp_19_reg_1502_reg.
+INFO: [Synth 8-5546] ROM "U0/reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design bram_dualport has unconnected port rst_a
+WARNING: [Synth 8-3331] design bram_dualport has unconnected port rst_b
+WARNING: [Synth 8-3331] design matmul_a_local_0 has unconnected port reset
+WARNING: [Synth 8-3331] design matmul has unconnected port values[31]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[30]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[29]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[28]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[27]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[26]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[25]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[24]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[23]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[22]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[21]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[20]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[19]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[18]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[17]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[16]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[15]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[14]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[13]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[12]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[11]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[10]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[9]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[8]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[7]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[6]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[5]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[4]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[3]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[2]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[1]
+WARNING: [Synth 8-3331] design matmul has unconnected port values[0]
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM mem_reg
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kernel_i /i_0/\k_reg_603_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kernel_i /i_0/\k_reg_603_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kernel_i /i_0/\k_reg_603_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (k_reg_603_reg[0]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (k_reg_603_reg[1]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (k_reg_603_reg[2]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[47]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[46]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[45]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[44]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[43]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[42]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[41]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[40]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[39]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[38]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[37]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[36]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[35]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[34]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[33]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[32]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[31]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[30]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[29]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[28]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[27]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[26]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[25]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[24]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[23]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[22]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[21]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[20]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[19]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[18]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[17]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[47]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[46]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[45]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[44]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[43]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[42]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[41]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[40]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[39]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[38]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[37]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[36]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[35]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[34]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[33]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[32]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[31]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[30]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[29]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[28]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[27]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[26]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[25]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[24]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[23]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[22]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[21]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[20]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[19]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[18]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (bound_reg_1182_reg[17]__0) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[47]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[46]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[45]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[44]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[43]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[42]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[41]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[40]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[39]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[38]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[37]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[36]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[35]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[34]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[33]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[32]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[31]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[30]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[29]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[28]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[27]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[26]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[25]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[24]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[23]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[22]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[21]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[20]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[19]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[18]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[17]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[16]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[15]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[14]) is unused and will be removed from module matmul.
+WARNING: [Synth 8-3332] Sequential element (tmp_10_reg_1263_reg[13]) is unused and will be removed from module matmul.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2003.105 ; gain = 565.180 ; free physical = 10639 ; free virtual = 27695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram_dualport: | mem_reg    | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 4      | 
+|bram_dualport: | mem_reg    | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 4      | 
+|bram_dualport: | mem_reg    | 4 K x 32(READ_FIRST)   | W | R | 4 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 4      | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+--------------------------------------------+----------------+----------------------+-----------------+
+|Module Name   | RTL Object                                 | Inference      | Size (Depth x Width) | Primitives      | 
++--------------+--------------------------------------------+----------------+----------------------+-----------------+
+|\U0/kernel_i  | a_local_0_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_1_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_2_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_3_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_4_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_5_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_6_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | a_local_7_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_0_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_1_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_2_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_3_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_4_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_5_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_6_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|\U0/kernel_i  | b_local_7_U/matmul_a_local_0_ram_U/ram_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
++--------------+--------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matmul      | A*B                  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B2                 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A''*B                | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A''*B     | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B2                 | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A''*B                | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A''*B     | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B2                 | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 13     | 13     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A''*B                | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A''*B     | 18     | 13     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B''                | 12     | 12     | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN+(A:0x0):B2+C)' | 30     | 12     | 4      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 1    | 
+|matmul      | A2*B                 | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A2*B2                | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A2*B                 | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A2*B2                | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A2*B                 | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A2*B2                | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A2*B      | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B                  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B                  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | A*B                  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matmul      | A*B                  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matmul      | (PCIN>>17)+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2660.051 ; gain = 1222.125 ; free physical = 9881 ; free virtual = 26938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2667.051 ; gain = 1229.125 ; free physical = 9874 ; free virtual = 26931
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[0].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[1].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/memory_bank[2].mem_i/mem_reg_bram_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9870 ; free virtual = 26926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |CARRY8            |   105|
+|2     |DSP_ALU           |    39|
+|3     |DSP_A_B_DATA      |     4|
+|4     |DSP_A_B_DATA_1    |     4|
+|5     |DSP_A_B_DATA_2    |     6|
+|6     |DSP_A_B_DATA_3    |     1|
+|7     |DSP_A_B_DATA_5    |    21|
+|8     |DSP_A_B_DATA_6    |     3|
+|9     |DSP_C_DATA        |    38|
+|10    |DSP_C_DATA_1      |     1|
+|11    |DSP_MULTIPLIER    |    38|
+|12    |DSP_MULTIPLIER_1  |     1|
+|13    |DSP_M_DATA        |    39|
+|14    |DSP_OUTPUT        |    26|
+|15    |DSP_OUTPUT_1      |    13|
+|16    |DSP_PREADD        |    39|
+|17    |DSP_PREADD_DATA   |    38|
+|18    |DSP_PREADD_DATA_1 |     1|
+|19    |LUT1              |   409|
+|20    |LUT2              |   388|
+|21    |LUT3              |   192|
+|22    |LUT4              |   281|
+|23    |LUT5              |    80|
+|24    |LUT6              |   661|
+|25    |RAM16X1S          |   512|
+|26    |RAMB36E2          |     3|
+|27    |RAMB36E2_1        |     3|
+|28    |RAMB36E2_2        |     6|
+|29    |FDRE              |   959|
+|30    |FDSE              |     1|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------------------------------+----------------------------------+------+
+|      |Instance                         |Module                            |Cells |
++------+---------------------------------+----------------------------------+------+
+|1     |top                              |                                  |  3912|
+|2     |  U0                             |a3_wrapper                        |  3912|
+|3     |    kernel_i                     |matmul                            |  3538|
+|4     |      bound_fu_704_p2            |bound_fu_704_p2_funnel            |     8|
+|5     |      bound_reg_1182_reg__0      |bound_reg_1182_reg__0_funnel      |     8|
+|6     |      bound_fu_704_p2__0         |bound_fu_704_p2_funnel__1         |     8|
+|7     |      bound_reg_1182_reg__2      |bound_reg_1182_reg__0_funnel__1   |     8|
+|8     |      tmp_10_fu_871_p2           |tmp_10_fu_871_p2_funnel__3        |     8|
+|9     |      tmp_10_fu_871_p2__0        |tmp_10_fu_871_p2__0_funnel        |     8|
+|10    |      tmp_10_reg_1263_reg__0     |tmp_10_reg_1263_reg__0_funnel     |     8|
+|11    |      tmp_13_fu_894_p2           |tmp_10_fu_871_p2_funnel__4        |     8|
+|12    |      tmp_13_fu_894_p2__0        |tmp_10_fu_871_p2__0_funnel__1     |     8|
+|13    |      tmp_13_reg_1268_reg__0     |tmp_10_reg_1263_reg__0_funnel__1  |     8|
+|14    |      tmp1_mid2_v_fu_797_p2      |tmp_10_fu_871_p2_funnel__2        |     8|
+|15    |      tmp1_mid2_v_fu_797_p2__0   |tmp_10_fu_871_p2__0_funnel__2     |     8|
+|16    |      tmp1_mid2_v_fu_797_p2__1   |tmp_10_fu_871_p2__0_funnel__3     |     8|
+|17    |      tmp4_mid2_v_fu_1026_p2     |tmp4_mid2_v_fu_1026_p2_funnel     |     8|
+|18    |      bram_2_addr_1_reg_1442_reg |bram_2_addr_1_reg_1442_reg_funnel |     8|
+|19    |      tmp_31_6_fu_1109_p2        |tmp_31_6_fu_1109_p2__0_funnel__4  |     8|
+|20    |      tmp_31_6_fu_1109_p2__0     |tmp_31_6_fu_1109_p2__0_funnel     |     8|
+|21    |      tmp_31_6_fu_1109_p2__1     |tmp_31_7_fu_1113_p2__1_funnel__1  |     8|
+|22    |      tmp_31_7_fu_1113_p2        |tmp_31_6_fu_1109_p2__0_funnel__14 |     8|
+|23    |      tmp_31_7_fu_1113_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__1  |     8|
+|24    |      tmp_31_7_fu_1113_p2__1     |tmp_31_7_fu_1113_p2__1_funnel     |     8|
+|25    |      tmp_31_5_fu_1105_p2        |tmp_31_6_fu_1109_p2__0_funnel__12 |     8|
+|26    |      tmp_31_5_fu_1105_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__2  |     8|
+|27    |      tmp_31_5_fu_1105_p2__1     |tmp_31_7_fu_1113_p2__1_funnel__2  |     8|
+|28    |      tmp_31_1_fu_1075_p2        |tmp_31_1_fu_1075_p2_funnel        |     8|
+|29    |      tmp_31_1_fu_1075_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__8  |     8|
+|30    |      tmp_31_1_reg_1507_reg__0   |tmp_31_1_fu_1075_p2_funnel__2     |     8|
+|31    |      tmp_31_2_fu_1081_p2        |tmp_31_1_fu_1075_p2_funnel__3     |     8|
+|32    |      tmp_31_2_fu_1081_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__7  |     8|
+|33    |      tmp_31_2_reg_1512_reg__0   |tmp_31_1_fu_1075_p2_funnel__4     |     8|
+|34    |      tmp_31_3_fu_1087_p2        |tmp_31_6_fu_1109_p2__0_funnel__9  |     8|
+|35    |      tmp_31_3_fu_1087_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__6  |     8|
+|36    |      tmp_31_3_fu_1087_p2__1     |tmp_31_6_fu_1109_p2__0_funnel__11 |     8|
+|37    |      tmp_31_4_fu_1093_p2        |tmp_31_6_fu_1109_p2__0_funnel__13 |     8|
+|38    |      tmp_31_4_fu_1093_p2__0     |tmp_31_6_fu_1109_p2__0_funnel__5  |     8|
+|39    |      tmp_31_4_fu_1093_p2__1     |tmp_31_6_fu_1109_p2__0_funnel__10 |     8|
+|40    |      tmp_19_fu_1069_p2          |tmp_31_1_fu_1075_p2_funnel__5     |     8|
+|41    |      tmp_19_fu_1069_p2__0       |tmp_31_6_fu_1109_p2__0_funnel__3  |     8|
+|42    |      tmp_19_reg_1502_reg__0     |tmp_31_1_fu_1075_p2_funnel__1     |     8|
+|43    |      a_local_0_U                |matmul_a_local_0                  |    78|
+|44    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_29           |    78|
+|45    |      a_local_1_U                |matmul_a_local_0_0                |    65|
+|46    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_28           |    65|
+|47    |      a_local_2_U                |matmul_a_local_0_1                |    65|
+|48    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_27           |    65|
+|49    |      a_local_3_U                |matmul_a_local_0_2                |    65|
+|50    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_26           |    65|
+|51    |      a_local_4_U                |matmul_a_local_0_3                |    65|
+|52    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_25           |    65|
+|53    |      a_local_5_U                |matmul_a_local_0_4                |    97|
+|54    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_24           |    97|
+|55    |      a_local_6_U                |matmul_a_local_0_5                |    97|
+|56    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_23           |    97|
+|57    |      a_local_7_U                |matmul_a_local_0_6                |   101|
+|58    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_22           |   101|
+|59    |      b_local_0_U                |matmul_a_local_0_7                |    65|
+|60    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_21           |    65|
+|61    |      b_local_1_U                |matmul_a_local_0_8                |    65|
+|62    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_20           |    65|
+|63    |      b_local_2_U                |matmul_a_local_0_9                |    65|
+|64    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_19           |    65|
+|65    |      b_local_3_U                |matmul_a_local_0_10               |    65|
+|66    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_18           |    65|
+|67    |      b_local_4_U                |matmul_a_local_0_11               |    71|
+|68    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_17           |    71|
+|69    |      b_local_5_U                |matmul_a_local_0_12               |    97|
+|70    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_16           |    97|
+|71    |      b_local_6_U                |matmul_a_local_0_13               |   100|
+|72    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram_15           |   100|
+|73    |      b_local_7_U                |matmul_a_local_0_14               |   101|
+|74    |        matmul_a_local_0_ram_U   |matmul_a_local_0_ram              |   101|
+|75    |    \memory_bank[0].mem_i        |bram_dualport__1                  |    14|
+|76    |    \memory_bank[1].mem_i        |bram_dualport__2                  |    14|
+|77    |    \memory_bank[2].mem_i        |bram_dualport                     |    14|
++------+---------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.840 ; gain = 1259.914 ; free physical = 9868 ; free virtual = 26925
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 617 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2697.840 ; gain = 694.734 ; free physical = 9910 ; free virtual = 26967
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2697.848 ; gain = 1259.914 ; free physical = 9910 ; free virtual = 26967
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 656 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[0].mem_i/mem_reg_bram_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[0].mem_i/mem_reg_bram_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[0].mem_i/mem_reg_bram_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[0].mem_i/mem_reg_bram_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[1].mem_i/mem_reg_bram_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[1].mem_i/mem_reg_bram_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[1].mem_i/mem_reg_bram_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[1].mem_i/mem_reg_bram_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[2].mem_i/mem_reg_bram_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[2].mem_i/mem_reg_bram_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[2].mem_i/mem_reg_bram_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/memory_bank[2].mem_i/mem_reg_bram_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 551 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 39 instances
+  RAM16X1S => RAM32X1S (RAMS32): 512 instances
+
+173 Infos, 271 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2745.855 ; gain = 1362.320 ; free physical = 9895 ; free virtual = 26951
+INFO: [Common 17-1381] The checkpoint '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.runs/a3_matmul_slot_0_synth_1/a3_matmul_slot_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.srcs/sources_1/bd/a3_matmul/ip/a3_matmul_slot_0/a3_matmul_slot_0.xci
+INFO: [Coretcl 2-1174] Renamed 37 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/leonardo/Desktop/artico_spider/artico3/demos/flexible_GSZIE_matmul/build.hw/myARTICo3.runs/a3_matmul_slot_0_synth_1/a3_matmul_slot_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2769.867 ; gain = 0.000 ; free physical = 9890 ; free virtual = 26952
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 25 11:50:21 2018...
